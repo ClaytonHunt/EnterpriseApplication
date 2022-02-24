@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  enterpriseapplication.server:
+    image: ${DOCKER_REGISTRY-}enterpriseapplicationserver
+    build:
+      context: .
+      dockerfile: EnterpriseApplication/Server/Dockerfile
